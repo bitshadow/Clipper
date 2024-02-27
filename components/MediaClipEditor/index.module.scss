@@ -1,0 +1,51 @@
+.media-timeline {
+  :global {
+    .timeline-editor-action {
+      border-radius: 4px;
+      overflow: visible;
+    }
+    .timeline-editor-action-selected {
+      z-index: 1;
+    }
+    .timeline-editor-drag-line {
+      border-left: 1px dashed rgba(255, 255, 255, 0.6);
+    }
+    .timeline-editor :hover::-webkit-scrollbar:horizontal {
+      height: 10px !important;
+    }
+
+    .timeline-editor :hover::-webkit-scrollbar-thumb:horizontal {
+      background: #333 !important;
+      border-radius: 5px !important;
+    }
+
+    .timeline-editor-action-left-stretch:hover {
+      &::after {
+        border-left: 7px solid rgba(255, 255, 255, 0.3) !important;
+      }
+    }
+
+    .timeline-editor-action-right-stretch:hover {
+      &::after {
+        border-right: 7px solid rgba(255, 255, 255, 0.3) !important;
+      }
+    }
+    .timeline-editor-cursor {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      .timeline-editor-cursor-top {
+        color: #fff;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .timeline-editor-action-selected {
+      background-color: #11823b;
+    }
+    .timeline-editor-action-effect-full {
+      background-image: url("https://zdarcy.com/assets/soundWave.png");
+      background-color: rgba(255, 238, 105, 0.6);
+    }
+  }
+}
